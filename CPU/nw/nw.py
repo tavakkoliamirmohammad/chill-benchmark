@@ -1,0 +1,5 @@
+procedure('nw')
+loop(0)
+print_dep()
+skew([0], 1, [1,1])
+print_dep()
