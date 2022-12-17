@@ -13,3 +13,4 @@ cudaize(0, "kernel_gpu", {'a':N**2,'b':N**2,'c':N**2}, ['ii', "jj"], ["tt", "ss"
 copy_to_shared("tx", "b", -16)
 copy_to_shared("tx", "a", -16)
 copy_to_registers("kk", "c")
+unroll_to_depth(2)

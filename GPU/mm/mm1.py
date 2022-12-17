@@ -10,4 +10,4 @@ tile_by_index(["i"],[Tj],{'l1_control':"tt", "l1_tile": "t"},["ii","jj","kk", "t
 cudaize(0, "kernel_gpu", {'a':N*N,'b':N*N,'c':N*N}, ['ii', 'jj'], ['t', "tt"], [])
 copy_to_shared("tx", "b", -16)
 copy_to_registers("kk", "c")
-#unroll_to_depth(8)
+unroll_to_depth(2)
